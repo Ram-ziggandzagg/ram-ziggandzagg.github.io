@@ -8,7 +8,7 @@
 /* BASE */
 body {
   font-family: 'Lexend Deca', system-ui, sans-serif;
-  background: #000;
+  background: #0021F6;
   color: #fff;
   overflow: hidden;
 }
@@ -17,7 +17,7 @@ body {
 #intro {
   position: fixed;
   inset: 0;
-  background: #000;
+  background: #0021F6;
   z-index: 10;
 }
 
@@ -34,9 +34,9 @@ body {
 
 /* LOGO */
 .logo {
-  width: 40vw;
-  max-width: 320px;
-  min-width: 180px;
+  width: 80vw;
+  max-width: 900px;
+  min-width: 320px;
   height: auto;
 }
 
