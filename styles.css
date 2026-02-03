@@ -1,1 +1,108 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff;
+  color: #111;
+  overflow: hidden;
+}
+
+/* INTRO */
+#intro {
+  position: fixed;
+  inset: 0;
+  background: #111;
+  z-index: 10;
+}
+
+.intro-content {
+  position: relative;
+  z-index: 20;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.brand-name {
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+
+#enterBtn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  color: #111;
+  transition: transform 0.2s ease;
+}
+
+#enterBtn:hover {
+  transform: scale(1.05);
+}
+
+/* DOORS */
+.door {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #000;
+  transition: transform 1.4s ease-in-out;
+  z-index: 15;
+}
+
+.door.left {
+  left: 0;
+}
+
+.door.right {
+  right: 0;
+}
+
+.open .door.left {
+  transform: translateX(-100%);
+}
+
+.open .door.right {
+  transform: translateX(100%);
+}
+
+/* MAIN SITE */
+#site {
+  display: none;
+  padding: 4rem 2rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  padding: 3rem 2rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
 
