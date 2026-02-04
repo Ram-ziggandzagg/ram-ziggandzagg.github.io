@@ -65,6 +65,8 @@ body {
   cursor: pointer;
   padding: 0.5rem 1rem;
   transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: auto;
+  z-index: 30;
 }
 
 #enterBtn:hover {
@@ -81,6 +83,7 @@ body {
   background: #0021F6;
   transition: transform 1.4s ease-in-out;
   z-index: 15;
+  pointer-events: none;
 }
 
 .door.left {
