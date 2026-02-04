@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   enterBtn.addEventListener("click", () => {
-    console.log("ENTER clicked");
+
 
     intro.classList.add("open");
 
